@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: create
+    show-sql: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_validation_demo
+    username: postgres
+    password: postgres
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+
+      ## MULTIPART (MultipartProperties)
+      # Enable multipart uploads
+      enabled: true
+
+      # Threshold after which files are written to disk.
+      file-size-threshold: 2KB
